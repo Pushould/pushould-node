@@ -1,7 +1,7 @@
 {
   "name": "pushould-node",
   "version": "0.0.1",
-  "description": "",
+  "description": "RealTime without pain.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "request": "^2.69.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yhoshino11/pushould-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yhoshino11/pushould-node/issues"
+  },
+  "homepage": "https://github.com/yhoshino11/pushould-node#readme"
 }

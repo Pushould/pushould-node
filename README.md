@@ -1,4 +1,4 @@
-# [Pushould](https://yhoshino11.github.io) for Node.js
+# [Pushould](https://pushould.com) for Node.js
 
 ## Installation
 ```sh
@@ -7,7 +7,7 @@ $ npm install pushould-node
 
 ## Usage
 
-#### [Official Documentation](https://yhoshino11.github.io)
+#### [Official Documentation](https://pushould.com)
 
 ## License
 

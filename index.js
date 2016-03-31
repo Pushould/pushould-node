@@ -1,5 +1,6 @@
 'use strict';
 let request = require('request');
+let https   = require('https');
 
 let Pushould = (function() {
   function Pushould(arg) {
@@ -7,6 +8,16 @@ let Pushould = (function() {
     this.server_token = arg.server_token;
     this.email = arg.email;
     this.password = arg.password;
+    this.domain = this.url.replace('https://', '');
+
+    this.agentOptions = {
+      host: this.domain,
+      port: '443',
+      path: '/',
+      rejectUnauthorized: false
+    }
+
+    this.agent = new https.Agent(this.agentOptions);
   }
 
   Pushould.prototype.trigger = function(arg) {
@@ -30,7 +41,8 @@ let Pushould = (function() {
       qs: {
         'account': JSON.stringify(account_info),
         'data': JSON.stringify(send_data)
-      }
+      },
+      agent: this.agent
     }
     function callback(error, response, body) {
       if (!error) {

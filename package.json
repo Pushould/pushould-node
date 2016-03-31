@@ -1,6 +1,6 @@
 {
   "name": "pushould-node",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "RealTime without pain.",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,5 @@
   "bugs": {
     "url": "https://github.com/yhoshino11/pushould-node/issues"
   },
-  "homepage": "https://github.com/yhoshino11/pushould-node#readme"
+  "homepage": "https://pushould.com"
 }
